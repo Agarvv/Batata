@@ -1,0 +1,28 @@
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     color: white;
+}
+
+ .form {
+    width: 75%;
+    height: 75%;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+.form .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
