@@ -7,11 +7,15 @@ html, body {
 }
 
 body {
-    background-image: url("src/assets/abstract-technology-blue-curve-modern-600nw-2720628121.webp");
+    background-image: url("/src/assets/banner-transparente-fresas-rojas_197792-2475.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
+    
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
 }
 
 #root {
