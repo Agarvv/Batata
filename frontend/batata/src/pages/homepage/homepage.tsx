@@ -12,13 +12,14 @@ function App() {
                 <div className='form'>
                    <div className='logo'>
                      <p>Batata <strong> Safe Place</strong></p>
+                  
                    </div>
                   
                 <div className='f'>
                 
                   <div className='form-content'>
                       <div className='fc-h'>
-                         <h2>JUGAAAAAAAR</h2>
+                         <h1>Quiero Jugar</h1>
                       </div>
                       
                       <div className='inps'>
@@ -36,17 +37,16 @@ function App() {
                   </div>
 
                    <div className='tuto'>
-                      <h2>No sabes jugar? aqui te explico (gil)</h2>
-                      <p>Entras al juego, el sistema  te asignara a ti
-                         <br></br> (todo bien sigma q eres muak) a un equipo aleatorio de x personas. <br></br>
-                         ok?????? entiendes o no de momento???? *se le cae una tet- ok no :v <br></br>
-                         tu junto con esas personas con las que te toco, van a dibujar juntitos en equipo <br></br>
-                         tendras 5 minutos para dibujar con tu equipo asi q VE RAPIDO, MIER- ok no ya paro <br></br>
-                         tambien podreis coordinaros con un chat en tiempo real q yo (agarvv el teton) os prepare <br></br>
-                         cuando el tiempo se acabe, y todos acaben sus dibujos, <br></br>
-                         vais a votar cada uno de los dibujos. gana el equipo q mas votos tenga uwu  <br></br> 
-                         ES SIMPLE A Q SI?????????? diviertete q para eso lo hice ♡♡♡ os amo a todos ♡♡♡♡♡♡
-                         </p>
+                      <h1>No sabes jugar? (gil)</h1>
+                      <ul>
+                        <li id='li-o'><i className="fa-sharp fa-solid fa-user"></i>Metes tu Nombre en el formulario q te hice ahi exclusivamente pa ti </li>
+                        <li id='li-t'><i className="fa fa-door-open"></i> Metes el codigo de la sala en el formulario ahi bien bellako osi osi uwu</li>
+                        <li id='li-o'> <i className="fa-sharp fa-solid fa-clock"></i>esperas a que se unan jugadores o acabe una partida,</li>
+                        <li id='li-t'><i className="fa-sharp fa-solid fa-paint-brush"></i> Seras asignado a un equipo, dibujaras al mismo tiempo con tu equipo</li>
+                        <li id='li-o'> <i className="fa-sharp fa-solid fa-comments"></i> Tambien tienes chat en tiempo real para coordinarte con tu equipo :p</li>
+                        <li id='li-t'><i className="fa-sharp fa-solid fa-vote-yea"></i> Cuando todos los equipos terminen de dibujar, se votaran dibujos uno a uno</li>
+                        <li id='li-o'><i className="fa-sharp fa-solid fa-trophy"></i> Gana el equipo que mas votos tenga. Hecho con amor por Agarvv :3</li>
+                      </ul>
                    </div>
                   </div>
 
