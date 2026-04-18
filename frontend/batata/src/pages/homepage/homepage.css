@@ -154,6 +154,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
 
 #li-o {
@@ -181,8 +182,23 @@ li {
         height: auto;
     }
 
-    .logo {
-        margin: 0px;
+    li {
+          margin-bottom: 20px;
+    }
+
+    li i {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 586px) {
+    .logo p, strong {
+       font-size: 40px;
+       margin: 10px;
+    }
+
+    body {
+        background-image: url("/src/assets/56e7ae9d-07ba-4afd-b221-d27e789ff7e8.png");
     }
 }
 
