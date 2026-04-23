@@ -1,6 +1,5 @@
 import './game.css';
 
-import Header from '../../common/header/header'
 import Lobby from './components/lobby/lobby'
 
 
