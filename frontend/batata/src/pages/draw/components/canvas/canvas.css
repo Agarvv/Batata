@@ -358,5 +358,13 @@ backdrop-filter: blur(10px);
      padding: 5px;
      font-size: 12px;
    }
+
+   .chat {
+    display: none;
+   }
+
+   .c .canvas-area {
+    width: 100%;
+   }
 }
 
