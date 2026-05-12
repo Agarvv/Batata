@@ -1,7 +1,6 @@
 import './votations.css'
 import Smash from './components/smash/smash';
 import Pass from './components/pass/pass';
-import Header from '../../common/header/header';
 
 function Votations() {
     return(
