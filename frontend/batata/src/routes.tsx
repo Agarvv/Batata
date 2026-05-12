@@ -3,6 +3,7 @@ import  App from './pages/homepage/homepage';
 import Game from './pages/game/game'
 import Draw from './pages/draw/draw'
 import Votations from './pages/votations/votations'
+import Win from "./pages/win/win";
 
 export const routes : RouteObject[] = [
     {
@@ -20,5 +21,9 @@ export const routes : RouteObject[] = [
     {
         path: "/votations",
         element: <Votations />
+    },
+    {
+        path: "/win",
+        element: < Win />
     }
 ]

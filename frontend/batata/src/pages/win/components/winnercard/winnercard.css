@@ -1,0 +1,77 @@
+.w-card {
+    width: 50%;
+    height: 70%;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.w-card h1 {
+    position: absolute;
+    transform: rotate(-40deg) translateX(-80px) translateY(-50px);
+    font-size: 40px;
+    left: 0px;
+    top: 0;
+    color: red;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.stars {
+    position: absolute;
+    transform: translateY(70px) rotate(30deg) translateX(40px);
+    font-size: 125px;
+    right: 0px;
+    bottom: 0;
+    z-index: 1;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.c-f {
+    border: 1px solid black;
+    width: 50%;
+    
+ 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.c-f p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+}
+
+@media(max-width: 800px) {
+    .w-card {
+        width: 80%;
+    }
+
+    .c-f {
+        width: 80%;
+    }
+}
+
+@media(max-width: 500px) {
+    .w-card {
+        width: 95%;
+    }
+
+    .c-f {
+        width: 95%;
+    }
+
+    .w-card h1 {
+        transform: rotate(-40deg)  translateX(-30px) translateY(-30px);
+       
+    }
+}
