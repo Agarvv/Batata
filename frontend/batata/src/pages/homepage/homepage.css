@@ -1,204 +1,209 @@
-.app {
-    width: 100%;
-    height: 100%;
+* {
+    box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("/src/assets/56e7ae9d-07ba-4afd-b221-d27e789ff7e8.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #5a3b4a;
+}
+
+/* 🔮 CONTENEDOR */
 .form-container {
     width: 100%;
-    height: 100%;
-
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-     color: black;
-    
+
+    background: rgba(255, 192, 203, 0.08);
 }
 
- .form {
+/* 💗 TARJETA PRINCIPAL */
+.f {
     width: 85%;
     height: 85%;
-    
-    background: rgba(240, 240, 240, 0.4);
-    border-radius: 12px;
-     backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 5px black;
-     padding: 10px;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 182, 193, 0.25);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(255, 105, 180, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-.form .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    text-align: center;
-
-}
-
-.logo p, strong{
-     font-family: "Grand Hotel", cursive;
-     font-size: 70px;
-     padding: 0px;
-     margin: 25px;
-     
-}
-
-.logo p {
-    color: #E85D75;
-}
-
-.logo strong {
- color: red;
-}
-
-
-.f {
-    
-    display: flex;
-  
-    justify-content: space-between;
-}
-
-.fc-h h1 {
-    font-family: 'Indie Flower', cursive;
-    font-weight: 800;
-  font-style: normal;
-  font-size: 40px;
-  margin: 5px;
-  color: #bd3754;
-}
-
-.tuto {
-    text-align: center;
-    color: #FFF4E6;
-}
-
-.username {
-
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    gap: 25px;
-}
-
-.form-content {
-   flex: 1;
-
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   
-   padding: 10px;
-}
-
-.inps {
-    width: 100%;
-  
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    gap: 15px;
-}
-
-.fc-h {
-    flex: 0;
-  
-}
-
-.inps .inp {
-    width: 100%;
-  
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-
-.inps .inp input {
-    width: 75%; 
-    padding: 15px;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.75);
-    border: none;
-   
-}
-
-.btn {
-    flex: 2;
+/* 🌸 HEADER */
+.fh {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-     margin-top: 10px;
-}
-
-.btn button {
-    width: 82%;
-    padding: 15px;
-   background: rgba(245, 139, 155);
-    
-      border: none;
-      border-radius: 10px;
-      color: white;
-}
-
-
-
-li {
-    text-align: left;
     margin-bottom: 10px;
+}
+
+.fh h1 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 52px;
+    color: #ff7aa2;
+    text-shadow: 0 2px 10px rgba(255, 120, 160, 0.3);
+}
+
+.fh strong {
+    color: #ff4f87;
+}
+
+/* 🪷 CONTENIDO */
+.fc {
     display: flex;
+    width: 100%;
+    height: 70%;
+    gap: 10px;
+}
+
+/* 🧁 COLUMNAS */
+.l,
+.r {
+    width: 50%;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 182, 193, 0.15);
+}
+
+/* 🌷 TITULOS */
+.lh,
+.rh {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.lh h1,
+.rh h1 {
+    font-family: "Indie Flower", cursive;
+    color: #ffe3ec;
+    text-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+}
+
+/* 🎀 FORM */
+.d {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
+    gap: 14px;
 }
 
-#li-o {
-    color: red;
+.pfp {
+    width: 85px;
+    height: 85px;
+    background: radial-gradient(circle, #fff 30%, #ffd6e7 100%);
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 182, 193, 0.4);
 }
 
-#li-t {
-    color: #bd3754;
+/* ✍️ INPUT */
+.d input {
+    width: 60%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.7);
+    color: #5a3b4a;
+
+    box-shadow: inset 0 2px 10px rgba(255, 182, 193, 0.2);
 }
 
-.tuto h1 {
-    color: #bd3754;
+/* 💖 BOTÓN */
+.d button {
+    width: 60%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #ff7aa2, #ff4f87);
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 20px rgba(255, 79, 135, 0.25);
+
+    transition: all 0.2s ease;
 }
 
-@media(max-width: 1090px) {
-   .f {
-        flex-direction: column;
-    }
+.d button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(255, 79, 135, 0.35);
+}
 
-    .form {
-        height: 100%;
-    }
+/* 📜 INSTRUCCIONES */
+.rd {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
 
-    html, body {
+.rd p {
+    color: #ffeef5;
+    text-align: center;
+    margin: 6px 0;
+    font-size: 15px;
+    line-height: 1.4;
+
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 774px) {
+
+    .f {
+        width: 95%;
         height: auto;
     }
 
-    li {
-          margin-bottom: 20px;
+    .fc {
+        flex-direction: column;
+        height: auto;
     }
 
-    li i {
-        margin-right: 10px;
+    .l,
+    .r {
+        width: 100%;
+    }
+
+    .d input,
+    .d button {
+        width: 80%;
+    }
+
+    .rd {
+        max-height: 250px;
     }
 }
-
-@media(max-width: 586px) {
-    .logo p, strong {
-       font-size: 40px;
-       margin: 10px;
-    }
-
-    body {
-        background-image: url("/src/assets/56e7ae9d-07ba-4afd-b221-d27e789ff7e8.png");
-    }
-}
-

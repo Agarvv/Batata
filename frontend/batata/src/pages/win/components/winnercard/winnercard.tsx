@@ -13,7 +13,7 @@ function WinnerCard() {
       <div className="c-f">
        <p>PREMIO AUSTIN</p>
       </div>
-      <p className="l">Ya es de Noche...</p>
+      <p className="l">"Encuentra tu Forma de ser Feliz..."</p>
     </>
   )
 }
