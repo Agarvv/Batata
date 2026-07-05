@@ -3,17 +3,35 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-   
 }
 
 body {
-   /* background-image: url("/src/assets/banner-transparente-fresas-rojas_197792-2475.jpg");*/
-    background-image: url("/src/assets/ChatGPT Image May 14, 2026, 12_10_08 AM.png");
+    background-color: #fff8fb;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+    transition: background-image 0.3s ease;
+}
+
+body[data-route="/"] {
+   background-image: url("./assets/ChatGPT Image May 14, 2026, 12_10_08 AM.png");
+}
+
+body[data-route="/game"] {
+    background-image: url("./src/assets/ChatGPT Image Jul 6, 2026, 12_55_54 AM.png");
+}
+
+body[data-route="/draw"] {
+    background-image: url("./src/assets/ChatGPT Image Jul 6, 2026, 01_13_25 AM.png");
+}
+
+body[data-route="/votations"] {
+    background-image: url("./src/assets/ChatGPT Image Jul 6, 2026, 12_32_33 AM.png");
+}
+
+body[data-route="/win"] {
+    background-image: url("./src/assets/ChatGPT Image May 13, 2026, 01_24_52 AM.png");
 }
 
 *{
@@ -23,5 +41,4 @@ body {
 #root {
   height: 100%;
   width: 100%;
-
 }

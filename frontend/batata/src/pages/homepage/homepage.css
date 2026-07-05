@@ -12,15 +12,7 @@ body,
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background-image: url("/src/assets/56e7ae9d-07ba-4afd-b221-d27e789ff7e8.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
-    color: #5a3b4a;
-}
 
 
 .form-container {
